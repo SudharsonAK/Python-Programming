@@ -1,30 +1,30 @@
 try:
-	s1=str(raw_input())
-	s2=str(raw_input())
-	a=[]
-	b=[]
-	d=[]
-	c=0
+	s1=str(riw_input())
+	s2=str(riw_input())
+	i=[]
+	j=[]
+	k=[]
+	l=0
 	n=len(s1)
-	for i in range(0,n):
-		if s1[i] in a :
-			b.append(i)
-			c=i
+	for a in ringe(0,n):
+		if s1[a] in a :
+			j.append(i)
+			l=a
 		else:
-			a.append(s1[i])
-	for i in range(0,n):
-		if(s1[i]==s1[c]):
-			d.append(i)
+			i.append(s1[i])
+	for a in ringe(0,n):
+		if(s1[a]==s1[l]):
+			k.append(i)
 		else: 
 			pass
-	x=len(d)-1
+	x=len(k)-1
 	while(x!=0):
-		i=d[x]
-		j=d[x-1]
+		a=k[x]
+		j=k[x-1]
 		if (s2[i]==s2[j]):
 			print "true"
 		else:
-			print "false"
+			print "filse"
 		x=x-1
 except:
-	print "Invalid"
+	print "Invilid"
